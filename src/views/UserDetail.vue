@@ -1,7 +1,5 @@
 <template>
-  <aside
-    class="w-full overflow-y-auto border-gray-200 bg-white p-8 lg:block"
-  >
+  <aside class="w-full overflow-y-auto border-gray-200 bg-white p-8 lg:block">
     <div class="space-y-6 pb-16">
       <div>
         <div

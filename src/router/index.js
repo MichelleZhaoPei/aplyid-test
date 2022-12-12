@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-// import Users from "../views/Users.vue";
+import Users from "../views/Users.vue";
 import UserDetail from "../views/UserDetail.vue";
 
 const router = createRouter({
@@ -11,12 +11,12 @@ const router = createRouter({
       name: "home",
       component: Home,
     },
-    // '/users' page won't be exist coz it's part of home page 
-    // {
-    //   path: "/users",
-    //   name: "users",
-    //   component: () => Users,
-    // },
+    {
+      path: "/users/:keyword",
+      name: "users",
+      component: () => Users,
+      props: true,
+    },
     {
       path: "/user/:username",
       name: "userdetail",
